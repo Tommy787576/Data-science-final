@@ -1,4 +1,7 @@
 我用google colab來執行，環境可參考:
+python 3.7
+pytorch 1.7.0
+tensorboardX 2.1 (不一定要)
 
 內容:
 /Top folder
