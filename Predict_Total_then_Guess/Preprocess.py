@@ -4,7 +4,7 @@ import sys
 
 df = pd.read_csv(sys.argv[1])
 
-# 只取最後一個月的資料
+# 只取一個月的資料
 df = df[df["fecha_dato"] == sys.argv[3]]
 
 # 刪掉幾乎全部都是nan的兩個column
@@ -35,9 +35,3 @@ df["indrel_1mes"] = pd.to_numeric(df["indrel_1mes"], errors="coerce")
 df.dropna(inplace=True)
 
 df.to_csv(sys.argv[2], index=False)
-
-
-
-
-
-
