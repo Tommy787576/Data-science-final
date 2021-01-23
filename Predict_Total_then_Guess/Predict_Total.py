@@ -41,7 +41,7 @@ with open(sys.argv[3], 'wb') as f:
 a = df[10000:].values
 X_test = a[:,:-1]
 y_test = np.reshape(a[:,-1],-1)
-predict = clf.predict(X)
+predict = clf.predict(X_test)
 pre = pd.DataFrame(np.transpose(np.vstack([range(len(predict)),predict])),columns=['id', 'predict'])
 pre.to_csv(sys.argv[4], index=False)
 
