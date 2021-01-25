@@ -1,4 +1,4 @@
-## How to Use
+## Predict Total then Guess
 前處理
 ```cmd
 python Preprocess.py input output date
