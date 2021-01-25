@@ -1,1 +1,1 @@
-## The preprocessing for association and some attempts
+## The preprocessing for association rule analysis and some attempts
